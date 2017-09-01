@@ -2456,13 +2456,13 @@ void message_handler()
 struct msg
 {
     /* 消息结构其他成员 */
-    struct rt_mailbox ack;
+    rt_mailbox_t ack;
 };
 /* 或者 */
 struct msg
 {
     /* 消息结构其他成员 */
-    struct rt_semaphore ack;
+    rt_sem_t ack;
 };
 ~~~
 
